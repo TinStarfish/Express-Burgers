@@ -1,10 +1,15 @@
 doctype html
 html
     head
-        link(href='style.css' rel='stylesheet')
+        link(href="style.css" rel="stylesheet")
     body
-        ul
-            each item in config.menu
-                a(href=item[1])
-                    div(class='menu_item')
-                        li(id=item[1]) #{item[0]}
+        header
+        h1 #{title}
+            nav
+                ul
+                    each item in config.menu
+                        a(href=item[1])
+                            div(class='menu_item')
+                                li(id=item[1]) #{item[0]}<a>
+        block content
+        footer
