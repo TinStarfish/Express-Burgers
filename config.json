@@ -5,5 +5,11 @@
         ["Sides", "sidesMenu"],
         ["Desserts", "dessertMenu"],
         ["Drinks", "drinkMenu"]
+    ],
+
+    "links": [
+        ["about us", "About Us"],
+        ["location", "Location"],
+        ["contact", "Contact Us"]
     ]
 }
