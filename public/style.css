@@ -9,19 +9,15 @@ ul {
     font-size: 20px;
     list-style-type: none;
     overflow: hidden;
-    background: #7D3003;
 }
 
 .menu_item {
     float: left;
-    border: solid 1px;
-    border-color: #FFF;
-}
-
-/* li {
-} */
-
-.menu_item a {
+    background: #7D3003;
+    width: 100px;
+    height: 40px;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
     display: block;
     color: #FFF;
     text-align: center;
@@ -29,6 +25,10 @@ ul {
     margin: 5px;
 }
 
-.menu_item a:hover {
+.menu_item:hover {
+    border: solid 2px;
+    border-color: #FFF;
+    width: 110px;
+    height: 60px;
     background: #461001;
 }
