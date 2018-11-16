@@ -9,19 +9,19 @@ ul {
     font-size: 20px;
     list-style-type: none;
     overflow: hidden;
+    background: #7D3003;
 }
 
 .menu_item {
     float: left;
-}
-
-li {
-    background: #7D3003;
     border: solid 1px;
     border-color: #FFF;
 }
 
-li a {
+/* li {
+} */
+
+.menu_item a {
     display: block;
     color: #FFF;
     text-align: center;
@@ -29,6 +29,6 @@ li a {
     margin: 5px;
 }
 
-li a:hover {
-    background: #591001;
+.menu_item a:hover {
+    background: #461001;
 }
