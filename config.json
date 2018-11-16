@@ -1,0 +1,9 @@
+{
+    "menu": [
+        ["Home", "/"],
+        ["Burgers", "burgerMenu"],
+        ["Sides", "sidesMenu"],
+        ["Desserts", "dessertMenu"],
+        ["Drinks", "drinkMenu"]
+    ]
+}
