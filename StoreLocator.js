@@ -1,7 +1,14 @@
-var APIKey = 'AIzaSyDJ0F8vVstgnuk5YRi7umJG-ERrcy82ZfI';
+var APIKey = 'AIzaSyDshVGuIxeUlk7BOJEmTR512a00C_DRmIU';
 var map;
-Start();
+var ZOOM_DEFAULT = 10;
+var DEFAULT_LOCATION;
+var storeX = 39;
+var storeY = -112;
 
+window.onload = function() {
+    InitializeMap();
+    
+};
 
 function Start() {
     InitializeMap();
@@ -10,11 +17,20 @@ function Start() {
 }
 
 function InitializeMap() {
-    var urluru = {lat: -25.344, lng: 131.036};
-    var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: urluru});
-    var marker = new google.maps.Marker({position: urluru, map: map});
+    var urluru = {lat: 40.758480, lng:  -111.888138};
+    var map = new google.maps.Map(document.getElementById("map"), {zoom: 10, center: urluru});
+    var marker = new google.maps.Marker({
+        position: urluru,
+        title: "Express Burger",
+        icon: "mapIcon.png",
+        map: map});
+    //var marker = new google.maps.Marker({position: {lat: storeX, lng: storeY}, map: map})
     
 }
 
-
+function AddMapMarkers() {
+    
+    
+    
+}
 
