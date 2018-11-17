@@ -6,10 +6,15 @@ html
         header
         h1 #{title}
             div(class='dropdown')
-                button(class='dropButton')
-                div(id='dropdownMenu' class='dropdownMenuContent')
-                    each item in config.links
-                        a(href=item[1])
+                button(class='dropButton' onClick=`openMenu()`)
+                    div(class='bar1')
+                    div(class='bar2')
+                    div(class='bar3')
+                        div(id='dropdownMenu' class='dropdownMenuContent')
+                            each item in config.links
+                                a(href=item[1])
+                                    div(class='link_item')
+                                        li(id=item[1]) #{item[0]}
             nav
                 ul
                     each item in config.menu

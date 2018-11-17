@@ -1,7 +1,47 @@
 html {
-    background: #ED2700;
-    color: #FFF;
+    background: #FFF;
+    color: #ED2700;
     padding: 20px;
+}
+
+.link_item {
+    visibility: hidden;
+    text-decoration: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.show {
+    display: block;
+}
+
+nav {
+    background: #7D3003;
+}
+
+.dropButton {
+    float: right;
+    background: #CF7A15;
+    color: white;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.dropButton:hover, .dropButton:focus {
+    background: #FFF;
+}
+
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
 ul {
@@ -13,11 +53,10 @@ ul {
 
 .menu_item {
     float: left;
-    background: #7D3003;
     width: 100px;
     height: 40px;
-    -webkit-transition: width 1s, height 1s;
-    transition: width 1s, height 1s;
+    -webkit-transition: width .5s, height .5s;
+    transition: width .5s, height .5s;
     display: block;
     color: #FFF;
     text-align: center;
@@ -29,6 +68,6 @@ ul {
     border: solid 2px;
     border-color: #FFF;
     width: 110px;
-    height: 60px;
+    height: 50px;
     background: #461001;
 }
