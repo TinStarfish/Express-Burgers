@@ -1,11 +1,28 @@
 html {
     background: #FFF;
     color: #ED2700;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
     background: #FFF;
+}
+
+.Logo {
+    width: 75px;
+    height: 75px;
+}
+
+h2 {
+    background: #461001;
+    color: #FFF;
+    padding: 5px;
+}
+
+h3 {
+    background: #CF7A15;
+    color: #FFF;
+    padding: 10px;
 }
 
 body {
@@ -78,10 +95,4 @@ ul {
     width: 110px;
     height: 50px;
     background: #461001;
-}
-
-h3 {
-    background: #CF7A15;
-    color: #FFF;
-    padding: 10px;
 }
