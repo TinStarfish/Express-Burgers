@@ -3,10 +3,11 @@ html
     head
         script(src="/test.js")
         link(href="style.css" rel="stylesheet")
-        h1 Express Burgers
-            img(class='Logo' src="/Express_Burger_Assets/Express Logo.png", alt="Image Title")
     body
         header
+        div(class='TitleHead')
+            img(class='Logo' src="/Express_Burger_Assets/Express Logo.png", alt="Image Title")
+            h1 Express Burgers
         h2 #{title}
             div(class='dropdown')
                 button(class='dropButton' onclick='openMenu()')
