@@ -1,7 +1,9 @@
 var express = require('express');
 var pug = require('pug');
 var path = require('path');
-var config = require('./config.json')
+var fs = require('fs');
+var config = require('./config.json');
+var pageContent = require('./pageContents.json');
 
 var app = express();
 
@@ -13,7 +15,10 @@ app.get('/', function (req, res) {
     res.render('index', {
         'title':'Home',
         "config":config
+        
     });
+    
+    
 });
 
 app.get('/:name', function(req, res) {

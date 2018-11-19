@@ -1,10 +1,10 @@
 {
     "menu": [
         ["Home", "/"],
-        ["Burgers", "burgerMenu"],
-        ["Sides", "sidesMenu"],
-        ["Desserts", "dessertMenu"],
-        ["Drinks", "drinkMenu"]
+        ["Burgers", "BurgersMenu"],
+        ["Sides", "SidesMenu"],
+        ["Desserts", "DessertsMenu"],
+        ["Drinks", "DrinksMenu"]
     ],
 
     "links": [
