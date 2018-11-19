@@ -7,7 +7,7 @@ html
         header
         h1 #{title}
             div(class='dropdown')
-                button(class='dropButton' onClick=`openMenu()`)
+                button(class='dropButton' onclick='openMenu()')
                     div(class='bar1')
                     div(class='bar2')
                     div(class='bar3')
@@ -24,3 +24,4 @@ html
                                 li(id=item[1]) #{item[0]}
         block content
         footer
+        h3 Express Burgers
