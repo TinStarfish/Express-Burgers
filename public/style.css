@@ -1,6 +1,7 @@
 html {
     background: #ED2700;
     color: #FFF;
+    font-family: 'Acme';
 }
 
 .Parent {
@@ -120,4 +121,9 @@ ul {
     width: 110px;
     height: 50px;
     background: #461001;
+}
+
+@font-face {
+    font-family: Acme;
+    src: url('Acme-Regular.ttf');
 }
