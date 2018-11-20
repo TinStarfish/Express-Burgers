@@ -4,8 +4,7 @@
         ["Burgers", "burgers"],
         ["Sides", "Sides"],
         ["Desserts", "Desserts"],
-        ["Drinks", "DrinksMenu"],
-        ["Store Location", "StoreLocation"]
+        ["Drinks", "DrinksMenu"]
     ],
 
     "links": [

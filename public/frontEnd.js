@@ -29,7 +29,7 @@ var sidesPage = {
 
 var drinksPage = {
     "title":"Sides",
-    "content_0":"Fountain Drink (Cola-Coka Products)- $2.99",
+    "content_0":"Fountain Drink (Coca-Cola Products)- $2.99",
     "imgpath_0":"/Express_Burger_Assets/Assets_Drinks/coke-all1.png",
     "content_1":"Lemonade- $3.99",
     "imgpath_1":"/Express_Burger_Assets/Assets_Drinks/2322CC-lg.jpg",
