@@ -21,15 +21,35 @@ app.get('/', function (req, res) {
     
 });
 
-app.get('/:name', function(req, res) {
-    res.render('pages', {
+app.get('/burgers', function(req, res) {
+    res.render('burgers', {
         "title": req.params.name,
         "config": config
     });
 });
 
+
+///:name
+app.get('/:name', function(req, res) {
+    res.render('sides', {
+        "title": req.params.name,
+        "config": config
+    });
+    
+});
+
 function openMenu() {
     document.getElementById('dropdownMenu').classList.toggle('show');
+}
+
+function loadJSONData() {
+    console.log("Loading JSON Data...")
+    for (var exKey in pageContent) {
+        console.log("" + pageContent[exKey]);
+        
+    }
+    
+    
 }
 
 // window.onclick = function(event) {

@@ -6,12 +6,12 @@ var storeX = 39;
 var storeY = -112;
 
 window.onload = function() {
-    InitializeMap();
+    //InitializeMap();
     
 };
 
 function Start() {
-    InitializeMap();
+    //InitializeMap();
     
     
 }
@@ -21,8 +21,9 @@ function InitializeMap() {
     var map = new google.maps.Map(document.getElementById("map"), {zoom: 10, center: urluru});
     var marker = new google.maps.Marker({
         position: urluru,
-        title: "Express Burger",
-        icon: "mapIcon.png",
+        title: "Express Burgers",
+        icon: "Express_Burger_Assets/mapIcon.png",
+        scaledSize: "[25,25]",
         map: map});
     //var marker = new google.maps.Marker({position: {lat: storeX, lng: storeY}, map: map})
     
