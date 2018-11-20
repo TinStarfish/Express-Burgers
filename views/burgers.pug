@@ -1,13 +1,15 @@
 extends layout
     
 block content
-    h1 #{title}
-    img.image(src="Express_Burger_Assets/Assets_Burgers/burgers_main-bacon-cheeseburger-hamburger-stand.jpg" width = "412")
-    h2(id="item_0") Cheeseburger- $4.99
-    img.image(src="Express_Burger_Assets/Assets_Burgers/western_bacon_cheeseburger_cke_restaurants_450x360.jpg" width = "412")
-    h2(id="item_1") Western Bacon Cheeseburger- $11.99
-    img.image(src="Express_Burger_Assets/Assets_Burgers/veggie-burger-main-main.jpg" width = "412")
-    h2(id="item_2") Veggie Burger- $11.99
-    img.image(src="Express_Burger_Assets/Assets_Burgers/10210001-big-jack-daddy-burger.jpg" width = "412")
-    h2(id="item_2") Half Pound Burger- $14.99
-    //a(id='map')
+    script(src="./frontEnd.js")
+    h1(id="title") #{title}
+    img.image(id = "image_0" src="Express_Burger_Assets/placeholder.png" width = "412")
+    h2(id="item_0") - $0.00
+    img.image(id = "image_1" src="Express_Burger_Assets/placeholder.png" width = "412")
+    h2(id="item_1")  - $0.00
+    img.image(id = "image_2" src="Express_Burger_Assets/placeholder.png" width = "412")
+    h2(id="item_2")  - $0.00
+    img.image(id = "image_3" src="Express_Burger_Assets/placeholder.png" width = "412")
+    h2(id="item_3")  - $0.00
+
+    body(onload="OnLoad();")

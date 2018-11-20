@@ -19,37 +19,13 @@ app.get('/', function (req, res) {
     });    
 });
 
-app.get('/burgers', function(req, res) {
+app.get('/:name', function(req, res) {
     res.render('burgers', {
         "title": req.params.name,
         "config": config
     });
 });
 
-app.get('/DrinksMenu', function(req, res) {
-    res.render('DrinksMenu', {
-        "title": req.params.name,
-        "config": config
-    });
-});
-
-
-///:name
-app.get('/:name', function(req, res) {
-    res.render('sides', {
-        "title": req.params.name,
-        "config": config
-    });
-    
-});
-
-app.get('/:name', function(req, res) {
-    res.render('Desserts', {
-        "title": req.params.name,
-        "config": config
-    });
-    
-});
 
 function openMenu() {
     document.getElementById('dropdownMenu').classList.toggle('show');
