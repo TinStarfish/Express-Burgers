@@ -15,10 +15,7 @@ app.get('/', function (req, res) {
     res.render('index', {
         'title':'Home',
         "config":config
-        
-    });
-    
-    
+    });    
 });
 
 app.get('/:name', function(req, res) {
