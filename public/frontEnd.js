@@ -67,7 +67,7 @@ function OnLoad() {
         ["Drinks", "DrinksMenu"],
         ["Store Location", "StoreLocation"]
     ],*/
-    if(document.getElementById('title').innerHTML=="burgers") {
+    if(document.getElementById('title').innerHTML=="Burgers") {
         document.getElementById('image_0').src = burgerPage.imgpath_0;
         document.getElementById('item_0').innerHTML = burgerPage.content_0;
         document.getElementById('image_1').src = burgerPage.imgpath_1;
@@ -76,7 +76,6 @@ function OnLoad() {
         document.getElementById('item_2').innerHTML = burgerPage.content_2;
         document.getElementById('image_3').src = burgerPage.imgpath_3;
         document.getElementById('item_3').innerHTML = burgerPage.content_3;
-
     }
     if(document.getElementById('title').innerHTML=="Sides") {
         document.getElementById('image_0').src = sidesPage.imgpath_0;
@@ -86,8 +85,7 @@ function OnLoad() {
         document.getElementById('image_2').src = sidesPage.imgpath_2;
         document.getElementById('item_2').innerHTML = sidesPage.content_2;
         document.getElementById('image_3').src = sidesPage.imgpath_3;
-        document.getElementById('item_3').innerHTML = sidesPage.content_3;
-        
+        document.getElementById('item_3').innerHTML = sidesPage.content_3;       
     }
     
     if(document.getElementById('title').innerHTML=="Desserts") {
@@ -99,10 +97,9 @@ function OnLoad() {
         document.getElementById('item_2').innerHTML = dessertsPage.content_2;
         document.getElementById('image_3').src = dessertsPage.imgpath_3;
         document.getElementById('item_3').innerHTML = dessertsPage.content_3;
-
     }
     
-    if(document.getElementById('title').innerHTML=="DrinksMenu") {
+    if(document.getElementById('title').innerHTML=="Drinks Menu") {
         document.getElementById('image_0').src =drinksPage.imgpath_0;
         document.getElementById('item_0').innerHTML = drinksPage.content_0;
         document.getElementById('image_1').src = drinksPage.imgpath_1;
@@ -111,14 +108,28 @@ function OnLoad() {
         document.getElementById('item_2').innerHTML = drinksPage.content_2;
         document.getElementById('image_3').src = drinksPage.imgpath_3;
         document.getElementById('item_3').innerHTML = drinksPage.content_3;
-
     }
 
     
 }
 
 function WhatPage() {
-    var title = document.title;
-    
-    
+    var title = document.title;    
+}
+
+function openMenu() {
+    document.getElementById('dropdownMenu').classList.toggle('show');
+}
+
+window.onclick = function(event) {
+    if(!event.target.matches('.dropButton')) {
+        var dropdowns = document.getElementsByClassName('.link_item');
+        var i;
+        for(i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if(openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
