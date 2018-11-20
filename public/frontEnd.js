@@ -7,7 +7,10 @@ var burgerPage = {
     "content_2":"Western Bacon Cheeseburger- $12.99",
     "imgpath_2":"Express_Burger_Assets/Assets_Burgers/western_bacon_cheeseburger_cke_restaurants_450x360.jpg",
     "content_3":"Veggie Burger- $11.99",
-    "imgpath_3":"Express_Burger_Assets/Assets_Burgers/veggie-burger-main-main.jpg"
+    "imgpath_3":"Express_Burger_Assets/Assets_Burgers/veggie-burger-main-main.jpg",
+    "content_4":"The Mega Burger- $12.99",
+    "imgpath_4":"Express_Burger_Assets/Assets_Burgers/10210001-big-jack-daddy-burger.jpg"
+    
     
 
 }
@@ -21,7 +24,9 @@ var sidesPage = {
     "content_2":"8 Piece Chicken Tenders- $8.99",
     "imgpath_2":"Express_Burger_Assets/Assets_Sides/099490-600x600-A.jpg",
     "content_3":"Lightly Fried Fish Fillets- $9.99",
-    "imgpath_3":"Express_Burger_Assets/Assets_Sides/a0aa52ac-c0fa-4b19-92ef-01c89f2a2e00.jpg"
+    "imgpath_3":"Express_Burger_Assets/Assets_Sides/a0aa52ac-c0fa-4b19-92ef-01c89f2a2e00.jpg",
+    "content_4":"Garden Salad- $8.99",
+    "imgpath_4":"Express_Burger_Assets/Assets_Sides/garden-salad-800x800.jpg"
     
     
     
@@ -36,7 +41,9 @@ var drinksPage = {
     "content_2":"Local Beverages- $3.99",
     "imgpath_2":"/Express_Burger_Assets/Assets_Drinks/drinks-695x521.jpg",
     "content_3":"Ginger Ale- $2.99",
-    "imgpath_3":"/Express_Burger_Assets/Assets_Drinks/homemade-hawaiian-ginger-ale-940.jpg"
+    "imgpath_3":"/Express_Burger_Assets/Assets_Drinks/homemade-hawaiian-ginger-ale-940.jpg",
+    "content_4":"Root Beer- $3.99",
+    "imgpath_4":"/Express_Burger_Assets/Assets_Drinks/root-beer-677x410.jpg"
     
     
     
@@ -51,8 +58,9 @@ var dessertsPage = {
     "content_2":"Banana Split Sundae- $5.99",
     "imgpath_2":"Express_Burger_Assets/Assets_Desserts/90948598-homemade-banana-split-sundae-american-dessert-isolated-on-white-background.jpg",
     "content_3":"Cookie Pie- $6.99",
-    "imgpath_3":"Express_Burger_Assets/Assets_Desserts/268685-papa-johns-big-cookie-primary.jpg"
-    
+    "imgpath_3":"Express_Burger_Assets/Assets_Desserts/268685-papa-johns-big-cookie-primary.jpg",
+    "content_4":"Cheesecake Slice- $6.99",
+    "imgpath_4":"Express_Burger_Assets/Assets_Desserts/classic-cheesecake-d104417_horiz.jpg"
     
     
 }
@@ -76,6 +84,9 @@ function OnLoad() {
         document.getElementById('item_2').innerHTML = burgerPage.content_2;
         document.getElementById('image_3').src = burgerPage.imgpath_3;
         document.getElementById('item_3').innerHTML = burgerPage.content_3;
+        document.getElementById('image_4').src = burgerPage.imgpath_4;
+        document.getElementById('item_4').innerHTML = burgerPage.content_4;
+
     }
     if(document.getElementById('title').innerHTML=="Sides") {
         document.getElementById('image_0').src = sidesPage.imgpath_0;
@@ -85,7 +96,10 @@ function OnLoad() {
         document.getElementById('image_2').src = sidesPage.imgpath_2;
         document.getElementById('item_2').innerHTML = sidesPage.content_2;
         document.getElementById('image_3').src = sidesPage.imgpath_3;
-        document.getElementById('item_3').innerHTML = sidesPage.content_3;       
+        document.getElementById('item_3').innerHTML = sidesPage.content_3;
+         document.getElementById('image_4').src = sidesPage.imgpath_4;
+        document.getElementById('item_4').innerHTML = sidesPage.content_4;
+        
     }
     
     if(document.getElementById('title').innerHTML=="Desserts") {
@@ -97,6 +111,9 @@ function OnLoad() {
         document.getElementById('item_2').innerHTML = dessertsPage.content_2;
         document.getElementById('image_3').src = dessertsPage.imgpath_3;
         document.getElementById('item_3').innerHTML = dessertsPage.content_3;
+         document.getElementById('image_4').src = dessertsPage.imgpath_4;
+        document.getElementById('item_4').innerHTML = dessertsPage.content_4;
+
     }
     
     if(document.getElementById('title').innerHTML=="Drinks Menu") {
@@ -108,28 +125,16 @@ function OnLoad() {
         document.getElementById('item_2').innerHTML = drinksPage.content_2;
         document.getElementById('image_3').src = drinksPage.imgpath_3;
         document.getElementById('item_3').innerHTML = drinksPage.content_3;
+        document.getElementById('image_4').src = drinksPage.imgpath_4;
+        document.getElementById('item_4').innerHTML = drinksPage.content_4;
+
     }
 
     
 }
 
 function WhatPage() {
-    var title = document.title;    
-}
-
-function openMenu() {
-    document.getElementById('dropdownMenu').classList.toggle('show');
-}
-
-window.onclick = function(event) {
-    if(!event.target.matches('.dropButton')) {
-        var dropdowns = document.getElementsByClassName('.link_item');
-        var i;
-        for(i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if(openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
+    var title = document.title;
+    
+    
 }
