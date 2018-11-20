@@ -4,6 +4,7 @@ var path = require('path');
 var fs = require('fs');
 var config = require('./config.json');
 var pageContent = require('./pageContents.json');
+var turyContentDrank = require('./turyDrank.json');
 
 var app = express();
 
@@ -25,10 +26,25 @@ app.get('/burgers', function(req, res) {
     });
 });
 
+app.get('/DrinksMenu', function(req, res) {
+    res.render('DrinksMenu', {
+        "title": req.params.name,
+        "config": config
+    });
+});
+
 
 ///:name
 app.get('/:name', function(req, res) {
     res.render('sides', {
+        "title": req.params.name,
+        "config": config
+    });
+    
+});
+
+app.get('/:name', function(req, res) {
+    res.render('Desserts', {
         "title": req.params.name,
         "config": config
     });
