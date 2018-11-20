@@ -22,6 +22,17 @@ p {
     padding: 5px;
 }
 
+#mapBody {
+    width: 45%;
+    height: 45%;
+}
+
+#map {
+    width: 90%;
+    height: 45%;
+    position: absolute;
+}
+
 .Logo {
     width: 175px;
     height: 175px;
